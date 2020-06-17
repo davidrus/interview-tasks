@@ -1,0 +1,189 @@
+1) Explain the lifecycle methods of React components in detail.
+
+
+2) What are Higher-Order components?
+const component = higherOrderComponent(WrappedComponent);
+
+
+3) What is React.createRef() and how we can use it
+
+
+4) What are advantages of using React Hooks?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+================================
+1)
+
+componentWillMount() – Executed just before rendering takes place both on the client as well as server-side.
+componentDidMount() – Executed on the client side only after the first render.
+componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before another render is called.
+shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component to update, return true else return false. By default, it returns false.
+componentWillUpdate() – Called just before rendering takes place in the DOM.
+componentDidUpdate() – Called immediately after rendering takes place.
+componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the memory spaces.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2)
+HOC (high-order-component) can be used for many use cases as below,
+
+- Code reuse, logic and bootstrap abstraction
+- Render High jacking
+- State abstraction and manipulation
+- Props manipulation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3)
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+  render() {
+    return <div ref={this.myRef} />;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4)
+- Hooks allow to easily manipulate the state of our functional component without
+needing to convert them into class components.
+
+- Hooks don’t work inside classes (because they let you use React without
+classes). By using them, we can totally avoid using lifecycle methods, such as
+componentDidMount, componentDidUpdate, componentWillUnmount. Instead, we will
+use built-in hooks like useEffect.
+

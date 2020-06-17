@@ -1,0 +1,4 @@
+https://codesandbox.io/s/flamboyant-euler-zvdo9?file=/src/todo-list.tsx
+
+1) Render <ul> list of prepared data
+2) Move data up to App.js, pass it to component

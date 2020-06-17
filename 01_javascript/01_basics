@@ -1,0 +1,71 @@
+1) What are the data types supported by JavaScript?
+
+2) How can you create an Object?
+
+3) How can you create an Array?
+
+4) What are the scopes of a variable in JavaScript?
+
+5) What is the purpose of ‘this’ operator in JavaScript?
+
+6) Give some example of built-in methods?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========================================
+1)
+- Undefined
+- Null
+- Boolean
+- String
+- Symbol
+- Number
+- Object
+
+
+

@@ -1,0 +1,164 @@
+JAVSCRIPT BASICS:
+
+1)
+- Undefined
+- Null
+- Boolean
+- String
+- Symbol
+- Number
+- Object
+
+
+JAVASCRIPT INTERMEDIATE:
+
+2)
+Var – The JavaScript variables statement is used to declare a variable and,
+      optionally, we can initialize the value of that variable.
+      Example: var a =10; Variable declarations are processed before the execution of the code.
+Const – The idea of const functions is not allow them to modify the object on
+      which they are called. When a function is declared as const, it can be
+      called on any type of object.
+Let – It is a signal that the variable may be reassigned, such as a counter in
+      a loop, or a value swap in an algorithm. It also signals that the
+      variable will be used only in the block it’s defined in.
+
+
+
+JAVASCRIPT ADVANCED:
+
+1)
+const fn = (a,b,c) => console.log(a,b,c)
+fn.call(window, 1,2,3)
+fn.apply(window, [1,2,3])
+
+4)
+Scope safety: When arrow functions are used consistently, everything is
+guaranteed to use the same thisObject as the root.
+
+5)
+
+setTimeout(() =≥ {
+  console.log('Hello world!');
+}, 1000);
+
+
+const arr = [1, 2, 3];
+const double = arr.map((el) => {
+  return el * 2;
+});
+console.log(double); // [2, 4, 6]
+
+
+
+
+
+
+REACT INTERMEDIATE:
+
+
+1)
+
+componentWillMount() – Executed just before rendering takes place both on the client as well as server-side.
+componentDidMount() – Executed on the client side only after the first render.
+componentWillReceiveProps() – Invoked as soon as the props are received from the parent class and before another render is called.
+shouldComponentUpdate() – Returns true or false value based on certain conditions. If you want your component to update, return true else return false. By default, it returns false.
+componentWillUpdate() – Called just before rendering takes place in the DOM.
+componentDidUpdate() – Called immediately after rendering takes place.
+componentWillUnmount() – Called after the component is unmounted from the DOM. It is used to clear up the memory spaces.
+
+
+
+2)
+HOC can be used for many use cases as below,
+
+- Code reuse, logic and bootstrap abstraction
+- Render High jacking
+- State abstraction and manipulation
+- Props manipulation
+
+
+3)
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.myRef = React.createRef();
+  }
+  render() {
+    return <div ref={this.myRef} />;
+  }
+}
+
+
+4)
+- Hooks allow to easily manipulate the state of our functional component without
+needing to convert them into class components.
+
+- Hooks don’t work inside classes (because they let you use React without
+classes). By using them, we can totally avoid using lifecycle methods, such as
+componentDidMount, componentDidUpdate, componentWillUnmount. Instead, we will
+use built-in hooks like useEffect.
+
+
+
+
+
+
+TYPESCRIPT BASICS:
+
+2)
+Number: This represents number type values. The numbers are stored as floating-point values in TypeScript.
+String: A string represents a sequence of characters stored as Unicode UTF-16 code.
+Boolean: This represents a logical value. When we use the Boolean type, we get the output only in true or false.
+Null: Null represents a variable whose value is undefined. It is not possible to directly reference the null type value itself.
+Undefined: The Undefined type denotes all uninitialized variables.
+Void: A void is the return type of the functions that do not return any type of value.
+
+
+4)
+
+interface IInterfaceName {
+// variables' declaration
+// methods' declaration
+}
+
+
+
+
+TYPESCRIPT INTERMEDIATE:
+
+3)
+let discountFn = function (price: number, rate = 2) {
+  return price * rate;
+}
+discountFn(500); // Result - 1000
+discountFn(500, 0.5); // Result - 250
+
+
+
+
+TYPESCRIPT ADVANCED:
+
+1)
+function identity<T>(arg: T): T {
+  return arg;
+}
+let output1 = identity<string>("edureka");
+let output2 = identity<number>( 117 );
+
+console.log(output1);
+console.log(output2);
+
+
+3)
+function sum(a: number, ...b: number[]): number {
+  let result = a;
+  for (var i = 0; i < b.length; i++) {
+    result += b[i];
+  }
+  console.log(result);
+
+}
+
+let result1 = sum(2, 4);
+let result2 = sum(2,4,6,8);

@@ -1,0 +1,7 @@
+https://codesandbox.io/s/flamboyant-euler-zvdo9?file=/src/todo-list.tsx
+
+
+1) Create TodoListType with proper typing of properties which we want to put it
+2) Create callback function which return new item to the parent and use it to the new button
+3) BONUS: create and use useState hook in App.tsx, which contains toto-list data
+4) BONUS 2: use previously created callback to update data in useState
